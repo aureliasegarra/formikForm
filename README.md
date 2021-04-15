@@ -1,4 +1,4 @@
-#  :spaghetti: My formik form 
+#  :white_check_mark: My formik form 
 
 ## Create a form rapidly and with all validations without stress 
 
