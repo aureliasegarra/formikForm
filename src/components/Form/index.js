@@ -39,13 +39,13 @@ export default () => {
         validity[name] = emailTest.test(value);
         fieldValidationErrors[name] = validity[name]
           ? ''
-          : `${name} should be a valid email address`;
+          : `👆 ${name} should be a valid email address`;
       }
       if (isPassword) {
-        validity[name] = value.length >= 3;
+        validity[name] = value.length >= 8;
         fieldValidationErrors[name] = validity[name]
           ? ''
-          : `${name} should be 3 characters minimum`;
+          : `👆 ${name} should be 8 characters minimum`;
       }
     }
 
