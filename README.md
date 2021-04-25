@@ -1,20 +1,17 @@
-#  :white_check_mark: My formik form 
+#  :white_check_mark: My regular React form 
 
-## Create a form rapidly and with all validations without stress 
+## Create a form without libraries to manage validation 
 
 ## Illustration
-![Exemple](image.png)
+![Exemple](./screenshot.png)
 
 ## Language/tools
 - HTML5 / CSS3 / SCSS
 - Javascript / REACT / Hooks
-- Formik / Yup
-- Bootstrap
 
 ## Goals 
-- Discover Formik and Yup for validation form
+- Work on validation form
 - Components architecture for scalable application
-- Discover react-bootstrap
 - UX / UI
 
 ## How to use 
