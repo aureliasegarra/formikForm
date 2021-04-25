@@ -2,7 +2,8 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+
+import './styles.scss';
 
 export default () => {
   const [formState, setFormState] = useState({
@@ -82,52 +83,45 @@ export default () => {
 
   return (
     <div className="container">
-      <div className="row mb-5">
-        <div className="col-lg-12 text-center">
-          <h1 className="mt-5">React regular form</h1>
+      <h1 className="title">Log in Form</h1>
+      <h2 className="subtitle">React Regular</h2>
+      <form className="form" onSubmit={handleSubmit}>
+        <div className="form_group">
+          <label>Email address</label>
+          <input
+            type="email"
+            name="email"
+            className={`form_control ${
+              formState.formErrors.email ? 'is-invalid' : ''
+            }`}
+            placeholder="Enter your email"
+            onChange={handleChange}
+            value={formState.formValues.email}
+          />
+          <div className="invalid_feedback">
+            {formState.formErrors.email}
+          </div>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label>Email address</label>
-              <input
-                type="email"
-                name="email"
-                className={`form-control ${
-                  formState.formErrors.email ? 'is-invalid' : ''
-                }`}
-                placeholder="Enter email"
-                onChange={handleChange}
-                value={formState.formValues.email}
-              />
-              <div className="invalid-feedback">
-                {formState.formErrors.email}
-              </div>
-            </div>
-            <div className="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                name="password"
-                className={`form-control ${
-                  formState.formErrors.password ? 'is-invalid' : ''
-                }`}
-                placeholder="Password"
-                onChange={handleChange}
-                value={formState.formValues.password}
-              />
-              <div className="invalid-feedback">
-                {formState.formErrors.password}
-              </div>
-            </div>
-            <button type="submit" className="btn btn-primary btn-block">
-              Submit
-            </button>
-          </form>
+        <div className="form_group">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            className={`form_control ${
+              formState.formErrors.password ? 'is-invalid' : ''
+            }`}
+            placeholder="Enter your password"
+            onChange={handleChange}
+            value={formState.formValues.password}
+          />
+          <div className="invalid_feedback">
+            {formState.formErrors.password}
+          </div>
         </div>
-      </div>
+        <button type="submit" className="btn">
+          SUBMIT
+        </button>
+      </form>
     </div>
   );
 };

@@ -8,7 +8,6 @@ import './styles.css';
 // == Composant
 const App = () => (
   <div className="app">
-    <h1>Form</h1>
     <Form />
   </div>
 );
