@@ -1,6 +1,6 @@
 #  :white_check_mark: My regular React form 
 
-## Create a form without libraries to manage validation 
+## Create a log in form without libraries to manage validation 
 
 ## Illustration
 ![Exemple](./screenshot.png)
@@ -32,7 +32,7 @@ yarn build
 ```
 
 ## Status
-Project not completed
+Project completed
 
 ## Context
 Project developed as a web developer post diploma
