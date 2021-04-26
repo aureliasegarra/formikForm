@@ -1,4 +1,4 @@
-#  :victory_hand: My Formik form 
+#  :v: My Formik form 
 
 ## Create a log in form with Formik
 
