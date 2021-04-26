@@ -1,19 +1,21 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
+
+// import NPM
 import React from 'react';
 // eslint-disable-next-line object-curly-newline
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
+// import styles
 import './styles.css';
 
 function validateEmail(value) {
   let error;
   if (!value) {
-    error = 'Email is required';
+    error = 'Please email is required';
   }
   else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-    error = 'Invalid email address format';
+    error = 'Sorry, invalid email address format';
   }
-
   return error;
 }
 
@@ -25,12 +27,12 @@ function validatePassword(value) {
   else if (value.length < 8) {
     error = 'Password must be 8 characters at minimum';
   }
-
   return error;
 }
 
 const App = () => {
   const onSubmit = (values) => {
+    // Log the object values if form is valid
     console.log(values);
   };
 
