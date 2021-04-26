@@ -32,7 +32,7 @@ export default () => {
     validity[name] = value.length > 0;
     fieldValidationErrors[name] = validity[name]
       ? ''
-      : `${name} is required and cannot be empty`;
+      : `Sorry 😧 ${name} is required`;
 
     if (validity[name]) {
       if (isEmail) {
