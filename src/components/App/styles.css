@@ -49,6 +49,15 @@
   font-size: 0.9em;
 }
 
+.form_control.is-invalid {
+  border-radius: 20px;
+  border: none;
+  background-color: #F4F4F4;
+  padding: 10px 10px;
+  font-size: 0.9em;
+  border: 1px solid rgb(208, 24, 24);
+}
+
 .btn {
   width: 60%;
   border-radius: 20px;
