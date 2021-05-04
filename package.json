@@ -47,11 +47,18 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "^4.6.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "strip-ansi": "^7.0.0"
+=======
+    "formik": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+>>>>>>> 9d3a75ca6d7f59eca4bd31c51177c26f4efb6c36
   }
 }

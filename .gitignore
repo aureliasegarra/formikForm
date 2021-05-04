@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,vscode,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,vscode,react
@@ -56,3 +57,12 @@ sketch
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vscode,react
+=======
+node_modules/
+dist/
+
+.DS_Store
+Thumbs.db
+
+yarn-error.log
+>>>>>>> 9d3a75ca6d7f59eca4bd31c51177c26f4efb6c36
